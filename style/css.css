@@ -48,12 +48,16 @@ nav a {
 }
 
 nav a:hover, 
-aside a:hover,
+.nav-menu a:hover,
 .search-button:hover {         /* Green color*/
  color: #8ebd01;	
 }
 
-aside li:hover {
+.nav-menu ul {
+	padding-left: 3px;
+}
+
+.nav-menu li:hover {
 background: #262525;
 }
 
@@ -64,6 +68,7 @@ nav li {
 
 section {
 	width: 1279px;
+	min-height: 1255px;
 	margin: 0 auto;
 }
 
@@ -126,7 +131,7 @@ aside { /* LEFT VERTICAL NAV*/
 	margin: 7px 0 0 -39px;
 }
 
-aside a {
+.nav-menu a {
 	font-size: 14px;
 	color: white;
 	padding-left: 16px;
@@ -135,7 +140,7 @@ aside a {
     display: inline-block;
 }
 
-aside li {
+.nav-menu li {
 	background: #3c3c3c;
 	width: 226px;
 	height: 27px;
@@ -203,7 +208,7 @@ color: white;
 	margin-top: -55px;
 }
 
-article {
+.content article {
 	float: left;
 	width: 365px; 
 	height: 265px;
@@ -305,10 +310,13 @@ zoom: 0.8;
 }
 
 .cart-title,
-.form-title {
+.form-title,
+.advert-title,
+.comments-title, 
+.subscription-title {
 	background: linear-gradient(to top, #d8d8d8, #efefef);
 	height: 41px;
-	border: 1px solid black;
+	border: 1px solid #9f9f9f;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom: 2px solid #9f9f9f;
@@ -318,14 +326,17 @@ zoom: 0.8;
 }
 
 .cart-title span,
-.form-title span {
+.form-title span,
+.advert-title span,
+.comments-title span,
+.subscription-title span {
 	margin: 14px 0 0 9px;
     display: block;
 }
 
 .empty-cart {
 	min-height: 82px;
-	border: 1px solid black;
+	border: 1px solid #9f9f9f;
 }
 
 .empty-cart img {
@@ -345,7 +356,7 @@ zoom: 0.8;
 }
 
 .form {
-	border: 1px solid black;
+	border: 1px solid #9f9f9f;
 	height: 193px;
 }
 
@@ -401,7 +412,7 @@ input[type="checkbox"]:checked + span  	{
 	color: #acacac;
 }
 
-.save-me-ok {
+.ok-btn {
 	width: 40px;
 	height: 25px;
 	font-size: 14px;
@@ -410,4 +421,122 @@ input[type="checkbox"]:checked + span  	{
 	border: 1px solid black;
     border-radius: 2px;
     margin-left: 20px;
+}
+
+.form-reg {
+	margin: 5px 0 0 -25px;
+}
+
+.form-reg li {
+	float: left;
+	margin: 5px;
+}
+
+.form-reg a {
+	font-size: 12px;
+	color: #acacac;
+}
+
+.advert {
+min-height: 271px;
+margin-top: 20px;
+}
+
+.advert img {
+	margin: 14px auto;
+    display: block;
+}
+
+.advert-body {
+	border: 1px solid #9f9f9f;
+}
+
+.subscription {
+	min-height: 242px;
+	width: 229px;
+	margin-left: 37px;
+}
+
+.subscription ul {
+	padding-left: 15px;
+}
+
+.subscription-body {
+	min-height: 200px;
+	border: 1px solid #9f9f9f;
+	font-size: 13px;
+	color: #9f9f9f;
+}
+
+.subscription-body li {
+	margin-top: 15px;
+}
+
+.new {
+	padding-left: 15px;
+}
+
+.email {
+	border: none;
+    height: 90%;
+    outline-color: transparent;
+    padding-left: 5px;
+}
+
+.mail-field {
+	border: 1px solid #bebdbd;
+	height: 32px;
+	width: 197px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+
+.ok-btn-current-position {
+	margin-left: -5px;
+}
+
+.comments {
+	width: 100%;
+	margin-top: -27px;
+}
+
+.comments-body {
+	border: 1px solid #9f9f9f;
+}
+
+time {
+	font-size: 12px;
+}
+
+.author {
+	color: #39647e;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.comments article {
+	color: #646464;
+	font-size: 12px;
+}
+
+.comment-n {
+margin: 10px;
+}
+
+.all-comments a {
+	font-size: 11px;
+	margin: 5px 0px 15px 100px;
+    display: block;
+}
+
+footer {
+	background: url(../img/footer-bg.png);
+	height: 152px;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+footer > span {
+	color: white;
+	font-size: 14px;
 }
