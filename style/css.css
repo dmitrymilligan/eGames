@@ -28,6 +28,7 @@ a {
 }
 
 nav {
+	min-width: 900px;
 	width: 955px;
     height: 47px;
     margin: 71px auto;
@@ -190,7 +191,7 @@ color: white;
 
 .content {
    	width: 782px;
-    height: 1000px;
+    height: auto;
     float: left;
     margin: -18px 0 0 25px;
 }
@@ -199,7 +200,6 @@ color: white;
 	float: right;
 	width: 229px;
 	height: 1000px;
-	border: 1px solid gray;
 	margin-top: -55px;
 }
 
@@ -298,4 +298,116 @@ zoom: 0.8;
     width: 284px;
     margin: 0 auto;
     text-align: justify;
+}
+
+.cart {
+	width: 100%;
+}
+
+.cart-title,
+.form-title {
+	background: linear-gradient(to top, #d8d8d8, #efefef);
+	height: 41px;
+	border: 1px solid black;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: 2px solid #9f9f9f;
+	color: #4b4a4a;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.cart-title span,
+.form-title span {
+	margin: 14px 0 0 9px;
+    display: block;
+}
+
+.empty-cart {
+	min-height: 82px;
+	border: 1px solid black;
+}
+
+.empty-cart img {
+	margin: 25px 15px;
+	vertical-align: middle;
+}
+
+.empty-cart span {
+	font-size: 13px;
+	color: #4b4a4a;
+}
+
+.login-form {
+	height: 240px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.form {
+	border: 1px solid black;
+	height: 193px;
+}
+
+.form .text-field {
+	color: #c8c8c8;
+    display: block;
+    font-size: 13px;
+    border-radius: 3px;
+    border: 1px solid #c8c8c8;
+    height: 30px;
+    width: 197px;
+    padding-left: 10px;
+}
+
+input[type="text"] {
+	margin: 27px auto 17px;
+}
+
+input[type="password"] {
+	margin: 0 auto;
+}
+
+label {
+height: 13px;
+width: 13px;
+display: inline-block;
+position: relative;
+vertical-align: middle;
+}
+
+input[type="checkbox"] {
+	opacity: 0;
+}
+
+input[type="checkbox"] + span {
+ position: absolute; 
+ left: 0; top: 0;
+ width: 100%; height: 100%;
+ background: url(../img/check-not-checked.png) no-repeat; 
+ cursor: pointer;
+}
+
+input[type="checkbox"]:checked + span  	{
+ background: url(../img/check-checked.png) no-repeat;
+}
+
+.save-me {
+	margin: 17px 7px 0 17px;
+}
+
+.save-me-text {
+	font-size: 12px;
+	color: #acacac;
+}
+
+.save-me-ok {
+	width: 40px;
+	height: 25px;
+	font-size: 14px;
+	color: white;
+	background: linear-gradient(to top, #8fb718, #abd336);
+	border: 1px solid black;
+    border-radius: 2px;
+    margin-left: 20px;
 }
