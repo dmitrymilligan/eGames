@@ -1,1 +1,1 @@
- <b>eGames<b> - Макет игрового сайта eGames
+ <b>eGames</b> - Макет игрового сайта eGames
